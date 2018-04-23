@@ -55,9 +55,9 @@ public class HallUpdate extends HttpServlet {
 	
 	private void sendMailAlert(String hall) {
 		
-		final String username = "guineapigvlog@gmail.com";
-		final String password = "S0umyad33pl0g!n";
-		String from = "guineapigvlog@gmail.com";// change accordingly
+		final String username = "<user a gmail account>";
+		final String password = "<user the password>";
+		String from = username; // change accordingly
 
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
@@ -74,11 +74,11 @@ public class HallUpdate extends HttpServlet {
 		// compose the message
 		try {
 			
-			Address[] address = {new InternetAddress("soumyadeeplogin@gmail.com"), 
-					new InternetAddress("Rathore.amrsingh@gmail.com"), 
-					new InternetAddress("rahul726224@gmail.com"), 
-					new InternetAddress("amarsingh@outlook.in"),
-					new InternetAddress("abhishek.cp.11@gmail.com")};
+			Address[] address = {new InternetAddress("<email>@gmail.com"), 
+					new InternetAddress("<email>@gmail.com"), 
+					new InternetAddress("<email>@gmail.com"), 
+					new InternetAddress("<email>@outlook.in"),
+					new InternetAddress("<email>@gmail.com")};
 			//Address[] address = {new InternetAddress("soumyadeeplogin@gmail.com")};
 			MimeMessage message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(from));
